@@ -8,6 +8,7 @@ export const clientsApi = combinedApi.injectEndpoints({
           url: 'clients/',
         };
       },
+      providesTags: ['clientsList'],
     }),
     createClient: builder.mutation<TResponse, ICreateClient>({
       query(data) {
@@ -17,6 +18,7 @@ export const clientsApi = combinedApi.injectEndpoints({
           body: data,
         };
       },
+      invalidatesTags: ['clientsList'],
     }),
     retrieveClient: builder.query<IClientRetrieve, number>({
       query(id) {

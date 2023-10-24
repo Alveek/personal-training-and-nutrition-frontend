@@ -6,7 +6,7 @@ import {
   fetchBaseQuery,
 } from '@reduxjs/toolkit/dist/query/react';
 
-const BASE_URL = 'http://80.87.110.219:8000/api';
+const BASE_URL = 'http://80.87.110.219:9000/api';
 
 type TError = {
   data: {
